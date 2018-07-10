@@ -54,13 +54,13 @@ input[name="line"]{
     height: 53px;
     margin-right: 8px;
     /* margin-bottom: 8px; */     /*перенесено в line чтобы убрать matgin снизу*/
-    box-sizing: border-box;   /*для padding - вырванивание текста по вертикали*/
-    padding-top: 15px;
+    box-sizing: border-box;   /**/
+    line-height: 49px;  /*для выравнивания по вертикали*/
 
     font-size: 19px;
     font-family: "Arial", sans-serif;
     text-align: center;
-    color: black;
+    color: #041d23;
 
     border: 2px solid #e6d68e;
     border-radius: 5px;
@@ -68,4 +68,10 @@ input[name="line"]{
 .keyboard__key:last-child{
     margin-right: 0;
     /* margin-bottom: 0; */
+}
+.keyboard__key:hover{
+    border: 4px solid #fdf9bc;
+    line-height: 45px;  /*hover 4px - keyboard 2px = 2; 2*2стороны; 49-4=45*/
+    color: black;
+    cursor: pointer;
 }
