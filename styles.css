@@ -74,6 +74,7 @@ input[name="line"]{
     margin-right: 0;
     /* margin-bottom: 0; */
 }
+.keyboard__key_pressed,
 .keyboard__key:hover{
     border: 4px solid #fdf9bc;
     line-height: 45px;  /*hover 4px - keyboard 2px = 2; 2*2стороны; 49-4=45*/
