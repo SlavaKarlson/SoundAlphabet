@@ -1,0 +1,83 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* background-color: grey; */
+    background-image: url(img/3.jpg);
+}
+
+input[name="line"]{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);    /*выравнить по горизонтали (-left)*/
+    height: 40px;
+    width: 300px;
+
+    font-size: 19px;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    color: #041d23;
+
+    background-color: transparent;
+    border: 2px solid #e6d68e;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.keyboard{
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translateX(-50%);     /*выравнить по горизонтали (-left)*/
+    width: 638px;
+    height: 175px;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.1); /*прозрачный фон за клавой*/
+    border-radius: 5px;
+
+}
+.keyboard__line{
+    position: relative;
+    height: auto;
+    width: auto;
+    margin-bottom: 8px;
+}
+.keyboard__line1{
+}
+.keyboard__line2{
+    left: 25px;
+}
+.keyboard__line3{
+    left: 55px;
+    margin-bottom: 0;
+}
+.keyboard__key{
+    display: inline-block;
+    width: 53px;
+    height: 53px;
+    margin-right: 8px;
+    /* margin-bottom: 8px; */     /*перенесено в line чтобы убрать matgin снизу*/
+    box-sizing: border-box;   /**/
+    line-height: 49px;  /*для выравнивания по вертикали*/
+
+    font-size: 19px;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    color: #041d23;
+
+    border: 2px solid #e6d68e;
+    border-radius: 5px;
+}
+.keyboard__key:last-child{
+    margin-right: 0;
+    /* margin-bottom: 0; */
+}
+.keyboard__key_pressed,
+.keyboard__key:hover{
+    border: 4px solid #fdf9bc;
+    line-height: 45px;  /*hover 4px - keyboard 2px = 2; 2*2стороны; 49-4=45*/
+    color: black;
+    cursor: pointer;
+}
